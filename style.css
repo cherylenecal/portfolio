@@ -198,17 +198,25 @@ nav ul li a {
 }
 
 .hero-name {
-    margin: 0.5rem 0 1rem;
     --bg-size: 400%;
-    --color-one: hsl(245, 82%, 70%);
+    --color-one: hsl(281, 100%, 45%);
     --color-two: hsl(0, 0%, 75%);
     font-size: 3rem;
-    font-weight: 700;
+    font-weight: bold;
     background: linear-gradient(90deg, var(--color-one), var(--color-two), var(--color-one)) 0 0 / var(--bg-size) 100%;
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
-    animation: move-bg 8s infinite linear;
+    animation: move-bg 8s infinite linear;
+}
+
+@keyframes move-bg {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
 }
 
 .hero-name span {
