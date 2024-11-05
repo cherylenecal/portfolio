@@ -147,8 +147,20 @@ nav ul li {
     align-items: center;
 }
 
-nav ul li a {
-    color: var(--primaryTextColor);
+.nav ul li a {
+    text-decoration: none; /* Remove underline by default */
+    color: #333; /* Adjust color as needed */
+    transition: color 0.2s, border-bottom 0.2s; /* Smooth transition */
+}
+
+.nav ul li a:hover {
+    color: #000; /* Change color when hovered */
+    border-bottom: 2px solid #000; /* Add underline */
+}
+
+.nav ul li a:active {
+    color: #000; /* Adjust color if needed */
+    border-bottom: 2px solid #000; /* Add underline */
 }
 
 /* burger */
